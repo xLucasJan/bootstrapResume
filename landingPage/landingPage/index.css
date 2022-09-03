@@ -1,0 +1,99 @@
+.margin {
+    width: 20px;
+    margin: 0rem;
+    padding: 0rem;
+    left: 400px ;
+    top: 35px;
+}
+
+.vermelho {
+    color: red
+}
+
+body {
+    background-image: url('../IMG/bunitu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+html, body {font-family: 'Robot Condensed', sans-serif;
+font-size: 100%; width: 100%; height: 100%;}
+
+
+/* input:focus {
+    border-color: rgb(21,4,98) !important;
+} */
+
+/* input:invalid {
+    border-color: red;
+} */
+
+input:valid {
+    border-color: lightgreen;
+}
+
+/* select:invalid {
+    border-color: red;   
+} */
+
+select:valid {
+    border-color: lightgreen;
+}
+
+span {
+    position: relative;
+}
+
+/* input:invalid + span::before, textarea:invalid + span::before {
+    content:'✖';
+    color: red;
+} */
+
+input:valid + span::before, textarea:valid + span::before {
+    content:'✓';
+    color: green;
+}
+
+input + span::before {
+    position: absolute;
+    bottom: 5px;
+    left: 400px;
+}
+
+textarea + span::before {
+    position: absolute;
+}
+
+
+
+/* .hello{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid yellow;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+button {
+    margin-left: 10px;
+}
+
+.bg {
+    background-color: green;
+    color: #fff
+}
+
+.bd {
+    border: 5px solid red;
+}
+ */
